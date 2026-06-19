@@ -1,57 +1,197 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Luke Collier</title>
-<style>
-body{font-family:Arial,sans-serif;max-width:900px;margin:40px auto;padding:20px;line-height:1.6}
-h1,h2{margin-bottom:10px}
-section{margin:60px 0}
-a{color:#0066cc}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Luke Collier | Web Developer</title>
+  <meta name="description" content="Portfolio of Luke Collier, a UK based web developer who builds websites and web apps including Built Twice and TOB Performance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Hi, I'm Luke.</h1>
-<p>I'm a web developer based in the UK. I build websites and web applications that solve real problems and help businesses work more efficiently.</p>
+  <header class="topbar">
+    <a class="brand" href="#top">Luke Collier</a>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<section>
-<h2>About</h2>
-<p>I enjoy building software that people actually use.</p>
-<p>Most of my work sits somewhere between product development and business operations. I like taking a messy process, understanding how it works, and turning it into something simple through software.</p>
-</section>
+  <main id="top">
+    <section class="hero">
+      <div class="hero-text">
+        <p class="kicker">Web developer based in the UK</p>
+        <h1>I build websites and web apps that are simple to use and easy to grow.</h1>
+        <p class="intro">
+          My work includes Built Twice, a coaching platform for athlete planning and review, and TOB Performance, a strength and conditioning website based in Loughborough.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="#work">View work</a>
+          <a class="button secondary" href="mailto:lukecollier7560@gmail.com">Email me</a>
+        </div>
+      </div>
 
-<section>
-<h2>Built Twice</h2>
-<p>Built Twice is a coaching platform designed to help coaches manage athletes, training plans, check-ins, and reviews in one place.</p>
-<ul>
-<li>Product planning</li>
-<li>Front-end development</li>
-<li>Dashboard design</li>
-<li>Athlete management workflows</li>
-<li>Mobile responsiveness</li>
-<li>Platform architecture</li>
-</ul>
-<p><a href="https://www.builttwice.com/">Visit Built Twice</a></p>
-</section>
+      <div class="hero-panel">
+        <p class="panel-label">Recent projects</p>
+        <div class="mini-project">
+          <span>01</span>
+          <div>
+            <strong>Built Twice</strong>
+            <p>Coaching software for planning, check-ins, review, and athlete context.</p>
+          </div>
+        </div>
+        <div class="mini-project">
+          <span>02</span>
+          <div>
+            <strong>TOB Performance</strong>
+            <p>Performance coaching website with a clear contact route and service focus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section>
-<h2>TOB Performance</h2>
-<p>TOB Performance is a strength and conditioning coaching business based in Loughborough.</p>
-<ul>
-<li>Website development</li>
-<li>Responsive design</li>
-<li>Performance optimisation</li>
-<li>Content structure</li>
-<li>SEO improvements</li>
-</ul>
-<p><a href="https://www.tobperformance.com/">Visit TOB Performance</a></p>
-</section>
+    <section class="strip" aria-label="Skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Responsive design</span>
+      <span>Web apps</span>
+      <span>SEO basics</span>
+    </section>
 
-<section>
-<h2>Get In Touch</h2>
-<p>Email: lukecollier7560@gmail.com</p>
-<p>GitHub: github.com/lukec7560</p>
-</section>
+    <section id="work" class="section">
+      <div class="section-heading">
+        <p class="kicker">Selected work</p>
+        <h2>Projects I have worked on</h2>
+      </div>
+
+      <div class="projects">
+        <article class="project-card dark-card">
+          <div class="project-topline">
+            <span>Web app</span>
+            <span>Coaching software</span>
+          </div>
+          <h3>Built Twice</h3>
+          <p>
+            Built Twice brings coaching tools and athlete data into one calmer workspace. The focus is on weekly planning, athlete check-ins, honest feedback, and clearer coach review.
+          </p>
+          <div class="project-details">
+            <div>
+              <h4>What I focused on</h4>
+              <ul>
+                <li>Planning and review flow</li>
+                <li>Dashboard structure</li>
+                <li>Athlete management screens</li>
+                <li>Responsive layouts</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Type of work</h4>
+              <ul>
+                <li>Product thinking</li>
+                <li>Interface design</li>
+                <li>Front-end build</li>
+                <li>Software structure</li>
+              </ul>
+            </div>
+          </div>
+          <a class="project-link" href="https://www.builttwice.com/" target="_blank" rel="noopener">Visit Built Twice</a>
+        </article>
+
+        <article class="project-card light-card">
+          <div class="project-topline">
+            <span>Website</span>
+            <span>Performance coaching</span>
+          </div>
+          <h3>TOB Performance</h3>
+          <p>
+            TOB Performance is a strength and conditioning coaching business based in Loughborough, with remote coaching available worldwide through BuiltTwice.
+          </p>
+          <div class="project-details">
+            <div>
+              <h4>What I focused on</h4>
+              <ul>
+                <li>Clear page structure</li>
+                <li>Mobile friendly layout</li>
+                <li>Contact section</li>
+                <li>Simple service messaging</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Type of work</h4>
+              <ul>
+                <li>Website build</li>
+                <li>Content layout</li>
+                <li>Performance checks</li>
+                <li>SEO basics</li>
+              </ul>
+            </div>
+          </div>
+          <a class="project-link" href="https://www.tobperformance.com/" target="_blank" rel="noopener">Visit TOB Performance</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div>
+        <p class="kicker">About</p>
+        <h2>I like building useful things, not just nice looking pages.</h2>
+      </div>
+      <div class="about-copy">
+        <p>
+          I enjoy taking a real process, understanding where it gets messy, and turning it into something easier to use online.
+        </p>
+        <p>
+          That might be a coaching platform, a business website, a dashboard, or a small tool that saves time. I care about clear layouts, clean code, and making sure the site works properly on a phone.
+        </p>
+      </div>
+    </section>
+
+    <section class="section services">
+      <div class="section-heading">
+        <p class="kicker">What I can help with</p>
+        <h2>Websites, web apps, and the bits in between</h2>
+      </div>
+
+      <div class="service-grid">
+        <div class="service">
+          <span>01</span>
+          <h3>Websites</h3>
+          <p>Responsive sites for small businesses, personal brands, and services that need a clean online presence.</p>
+        </div>
+        <div class="service">
+          <span>02</span>
+          <h3>Web apps</h3>
+          <p>Dashboards, user flows, forms, portals, and product screens that help people get work done.</p>
+        </div>
+        <div class="service">
+          <span>03</span>
+          <h3>Improvements</h3>
+          <p>Layout updates, page speed checks, content structure, accessibility fixes, and mobile polish.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <p class="kicker">Contact</p>
+      <h2>Got something you want to build?</h2>
+      <p>Send me a message and tell me what you are working on.</p>
+      <a class="button primary" href="mailto:lukecollier7560@gmail.com">lukecollier7560@gmail.com</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Luke Collier</p>
+    <div>
+      <a href="https://github.com/lukec7560" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.builttwice.com/" target="_blank" rel="noopener">Built Twice</a>
+      <a href="https://www.tobperformance.com/" target="_blank" rel="noopener">TOB Performance</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
