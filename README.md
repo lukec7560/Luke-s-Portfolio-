@@ -1,26 +1,39 @@
 # Luke Collier Portfolio
 
-Static portfolio website for GitHub Pages.
+An accessibility-focused static portfolio built with HTML, CSS, and JavaScript.
 
-## Files
+## Local preview
 
-- index.html
-- styles.css
-- script.js
+No build step is required. Serve the repository root with any static web server:
 
-## How to upload on mobile
+```bash
+npx serve .
+```
 
-Upload these three files into the root of your GitHub repository.
+Then open `http://localhost:3000`, or use the URL printed by the server.
 
-Then enable GitHub Pages:
+## Deploy to Vercel
 
-1. Open repository settings
-2. Go to Pages
-3. Choose Deploy from a branch
-4. Select main
-5. Select root
-6. Save
+### Git integration
 
-Your site should publish at:
+1. Import this repository at [vercel.com/new](https://vercel.com/new).
+2. Leave the framework preset as `Other`.
+3. Leave the root directory as the repository root.
+4. Leave the build command and output directory empty.
+5. Select **Deploy**.
 
-https://lukec7560.github.io/Luke-s-Portfolio-/
+Every push to `main` will update production. Pull requests and other branches will receive preview deployments automatically.
+
+### Vercel CLI
+
+```bash
+npx vercel
+```
+
+Use `npx vercel --prod` when you are ready to deploy directly to production.
+
+No environment variables are required.
+
+## Deployment configuration
+
+`vercel.json` enables clean URLs and adds baseline security headers. The site remains a zero-build static deployment, so Vercel serves `index.html`, `styles.css`, and `script.js` directly from its CDN.
