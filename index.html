@@ -217,6 +217,69 @@
     </div>
   </footer>
 
+  <aside class="accessibility-tools" aria-label="Display preferences">
+    <button class="accessibility-trigger" type="button" aria-expanded="false" aria-controls="accessibility-panel">
+      <span class="accessibility-trigger-icon" aria-hidden="true">Aa</span>
+      <span>Display</span>
+    </button>
+    <div class="accessibility-panel" id="accessibility-panel" hidden>
+      <div class="accessibility-panel-heading">
+        <div>
+          <p class="accessibility-panel-title">Display preferences</p>
+          <p>Adjust this page to suit how you read.</p>
+        </div>
+        <button class="accessibility-close" type="button" aria-label="Close display preferences">×</button>
+      </div>
+
+      <div class="preference-group" aria-labelledby="text-size-label">
+        <p id="text-size-label">Text size</p>
+        <div class="segmented-control">
+          <button type="button" data-text-size="default" aria-pressed="true">Default</button>
+          <button type="button" data-text-size="large" aria-pressed="false">Large</button>
+          <button type="button" data-text-size="largest" aria-pressed="false">Largest</button>
+        </div>
+      </div>
+
+      <label class="preference-toggle">
+        <span>
+          <strong>High contrast</strong>
+          <small>Increase separation between text and surfaces.</small>
+        </span>
+        <input type="checkbox" data-preference="contrast">
+      </label>
+      <label class="preference-toggle">
+        <span>
+          <strong>Color-safe view</strong>
+          <small>Use a neutral palette and do not rely on hue.</small>
+        </span>
+        <input type="checkbox" data-preference="colorSafe">
+      </label>
+      <label class="preference-toggle">
+        <span>
+          <strong>Increase spacing</strong>
+          <small>Add space between letters, words, and lines.</small>
+        </span>
+        <input type="checkbox" data-preference="spacing">
+      </label>
+      <label class="preference-toggle">
+        <span>
+          <strong>Underline links</strong>
+          <small>Make links easier to distinguish from other text.</small>
+        </span>
+        <input type="checkbox" data-preference="links">
+      </label>
+      <label class="preference-toggle">
+        <span>
+          <strong>Reduce motion</strong>
+          <small>Turn off non-essential movement and transitions.</small>
+        </span>
+        <input type="checkbox" data-preference="motion">
+      </label>
+
+      <button class="reset-preferences" type="button">Reset preferences</button>
+    </div>
+  </aside>
+
   <script src="script.js"></script>
 </body>
 </html>
