@@ -320,13 +320,6 @@ ul {
   box-shadow: 0 12px 40px rgba(13, 17, 23, 0.06);
 }
 
-.service span {
-  display: block;
-  color: var(--orange);
-  font-weight: 900;
-  margin-bottom: 24px;
-}
-
 .service h3 {
   font-size: 25px;
 }
