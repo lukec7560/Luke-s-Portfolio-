@@ -9,7 +9,8 @@
   --card: #ffffff;
   --green: #21473b;
   --green-soft: #dcece3;
-  --orange: #d9863d;
+  --orange: #a85516;
+  --orange-on-dark: #f1aa6a;
   --line: rgba(13, 17, 23, 0.12);
   --shadow: 0 24px 80px rgba(13, 17, 23, 0.12);
 }
@@ -49,8 +50,9 @@ a {
 }
 
 :focus-visible {
-  outline: 3px solid var(--orange);
-  outline-offset: 4px;
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px var(--ink);
 }
 
 .topbar {
@@ -201,7 +203,7 @@ h4 {
 }
 
 .mini-project span {
-  color: var(--orange);
+  color: var(--orange-on-dark);
   font-weight: 900;
 }
 
